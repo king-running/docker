@@ -7,4 +7,9 @@ source venv/bin/activate
 pip install -r requirement.txt
 path_name=${pwd}/tar/app.tar.gz
 tar -zcf $path_name --exclude='./tar' ./
-echo 'finished!!'
+echo 'env ready finished!!'
+
+echo 'package docker images'
+docker build -f Dockerfile -t /never/falsk:0.1 .
+
+
