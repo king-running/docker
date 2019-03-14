@@ -9,7 +9,7 @@ path_name=${pwd}/tar/app.tar.gz
 tar -zcf $path_name --exclude='./tar' ./
 echo 'env ready finished!!'
 
-#echo 'package docker images'
-#docker build -f Dockerfile -t never/flask:0.1 .
+echo 'package docker images'
+docker build -f Dockerfile -t never/flask:0.1 .
 
 
