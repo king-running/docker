@@ -10,6 +10,6 @@ tar -zcf $path_name --exclude='./tar' ./
 echo 'env ready finished!!'
 
 echo 'package docker images'
-docker build -f Dockerfile -t /never/falsk:0.1 .
+docker build -f Dockerfile -t never/flask:0.1 .
 
 
